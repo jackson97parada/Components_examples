@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <title>Tailwind</title>
+    <!-- npx tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch -->
+  </head>
+  <body class="bg-bgBody">
+    <!-- First component -->
+    <section class="container mx-auto my-10">
+      <div class="flex justify-center">
+        <div>
+          <h1
+            class="text-blueDark bg-white font-DM text-2xl font-bold py-4 px-16"
+          >
+            Startup 3
+          </h1>
+          <h1
+            class="text-white bg-blueDark font-DM text-2xl font-bold py-4 px-16"
+          >
+            Startup 3
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Second component -->
+    <section class="container mx-auto">
+      <div class="flex flex-col items-center md:flex-row md:justify-center">
+        <div class="flex justify-center bg-white p-10">
+          <div class="flex flex-col mr-10 gap-8">
+            <!-- ======= -->
+            <div>
+              <i
+                class="fa-solid fa-circle-play rounded-full text-5xl border-2 border-red-600 text-red-600 hover:text-white hover:border-2 hover:border-gray-400 hover:bg-blueDark"
+              ></i>
+            </div>
+            <!-- ======= -->
+            <div>
+              <button
+                class="rounded-3xl py-1.5 px-5 font-DM text-white font-medium border-2 bg-teal-400 border-teal-400 hover:text-blueDark hover:border-2 hover:border-gray-200 hover:bg-white hover:medium"
+              >
+                Sign In
+              </button>
+            </div>
+            <!-- ======= -->
+            <div>
+              <button
+                class="rounded-3xl py-2 px-5 font-DM text-white text-lg font-medium border-2 bg-teal-400 border-teal-400 hover:text-blueDark hover:border-2 hover:border-gray-200 hover:bg-white hover:medium"
+              >
+                Sign In
+              </button>
+            </div>
+            <!-- ======= -->
+            <div>
+              <button
+                class="rounded-full py-3.5 px-7 font-DM text-white text-xl font-medium border-2 bg-teal-400 border-teal-400 hover:text-blueDark hover:border-2 hover:border-gray-200 hover:bg-white hover:medium"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col mr-3 gap-8">
+            <!-- ======= -->
+            <div>
+              <i
+                class="fa-solid fa-circle-play rounded-full text-5xl border-2 border-gray-400 text-white bg-blueDark hover:text-red-600 hover:border-2 hover:border-red-600 hover:bg-white"
+              ></i>
+            </div>
+            <!-- ======= -->
+            <div>
+              <button
+                class="rounded-3xl py-1.5 px-5 font-DM text-blueDark font-medium border-2 bg-white border-gray-200 hover:text-white hover:border-2 hover:border-teal-400 hover:bg-teal-400 hover:medium"
+              >
+                Sign In
+              </button>
+            </div>
+            <!-- ======= -->
+            <div>
+              <button
+                class="rounded-3xl py-2 px-5 font-DM text-blueDark text-lg font-medium border-2 bg-white border-gray-200 hover:text-white hover:border-2 hover:border-teal-400 hover:bg-teal-400 hover:medium"
+              >
+                Sign In
+              </button>
+            </div>
+            <!-- ======= -->
+            <div>
+              <button
+                class="rounded-full py-3.5 px-7 font-DM text-blueDark text-xl font-medium border-2 bg-white border-gray-200 hover:text-white hover:border-2 hover:border-teal-400 hover:bg-teal-400 hover:medium"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-8 bg-blueDark p-10 px-32 md:px-10">
+          <!-- ======= -->
+          <div>
+            <i
+              class="fa-solid fa-circle-play rounded-full text-5xl border-2 border-gray-500 text-blueDark bg-white hover:text-white hover:border-2 hover:border-gray-500 hover:bg-blueDark"
+            ></i>
+          </div>
+          <!-- ======= -->
+          <div>
+            <button
+              class="rounded-3xl py-1.5 px-5 font-DM text-white font-medium border-2 bg-blueDark border-gray-500 hover:text-blueDark hover:border-2 hover:border-gray-500 hover:bg-white hover:medium"
+            >
+              Sign In
+            </button>
+          </div>
+          <!-- ======= -->
+          <div>
+            <button
+              class="rounded-3xl py-2 px-5 font-DM text-white text-lg font-medium border-2 bg-blueDark border-gray-500 hover:text-blueDark hover:border-2 hover:border-gray-500 hover:bg-white hover:medium"
+            >
+              Sign In
+            </button>
+          </div>
+          <!-- ======= -->
+          <div>
+            <button
+              class="rounded-full py-3.5 px-7 font-DM text-white text-xl font-medium border-2 bg-blueDark border-gray-500 hover:text-blueDark hover:border-2 hover:border-gray-500 hover:bg-white hover:medium"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Third component -->
+    <section class="container mx-auto">
+      <div class="flex flex-col items-center md:flex-row md:justify-center">
+        <form class="bg-white p-10">
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-2.5 px-6 text-lg font-medium rounded-full border-2 border-gray-300 hover:bg-blueDark hover:text-white"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-blueDark text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-2.5 px-6 text-lg font-medium rounded-full border-2 border-gray-300 bg-blueDark hover:bg-white hover:text-black"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-blueDark text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer mt-7 p-4 pl-6 pr-20 text-xl rounded-full border-2 border-gray-300 hover:bg-blueDark hover:text-white"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-blueDark text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-4 pl-6 pr-20 text-xl rounded-full border-2 border-gray-300 bg-blueDark hover:bg-white hover:text-black"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-blueDark text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer mt-7 p-2 pl-5 pr-0 font-medium text-md rounded-full border-2 border-gray-300 hover:bg-blueDark hover:text-white"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-blueDark text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-2 pl-5 pr-0 font-medium text-md rounded-full border-2 border-gray-300 bg-blueDark hover:bg-white hover:text-black"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-blueDark text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+        </form>
+        <!-- =========== -->
+        <form class="bg-blueDark p-10">
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-2.5 px-6 text-lg font-medium rounded-full border-2 border-white border-opacity-25 bg-blueDark hover:bg-white hover:text-black"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-white text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-2.5 px-6 text-lg font-medium rounded-full border-2 border-white border-opacity-25 bg-white hover:bg-blueDark hover:text-white"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-white text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer mt-7 p-4 pl-6 pr-20 text-xl rounded-full border-2 border-white border-opacity-25 bg-blueDark hover:bg-white hover:text-black"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-white text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-4 pl-6 pr-20 text-xl rounded-full border-2 border-white border-opacity-25 bg-white hover:bg-blueDark hover:text-white"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-white text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer mt-7 p-2 pl-5 pr-0 font-medium text-md rounded-full border-2 border-white border-opacity-25 bg-blueDark hover:bg-white hover:text-black"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-white text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+          <!-- ============= -->
+          <label class="block">
+            <input
+              type="email"
+              class="peer p-2 pl-5 pr-0 font-medium text-md rounded-full border-2 border-white border-opacity-25 bg-white hover:bg-blueDark hover:text-white"
+              placeholder="Your email"
+            />
+            <p class="invisible peer-invalid:visible text-white text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+        </form>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Fourth component -->
+    <section class="container mx-auto">
+      <div class="flex flex-col items-center md:flex-row md:justify-center">
+        <div class="flex flex-col text-left gap-6 bg-white p-20">
+          <!-- DROPDOWN SMALL -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-blueDark shadow-sm hover:bg-gray-50 peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-white shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN SMALL -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-blueDark px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-blueDark peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-blueDark shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN MEDIUM -->
+          <div class="mt-6">
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-white px-4 py-3 text-md font-semibold text-blueDark shadow-sm hover:bg-gray-50 peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-white shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN MEDIUM -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-blueDark px-4 py-3 text-md font-semibold text-white shadow-sm hover:bg-white hover:text-blueDark peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-blueDark shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-white bg-blueDark block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-white bg-blueDark block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-white bg-blueDark block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN BIG -->
+          <div class="mt-6">
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-white px-4 py-3 text-xl font-semibold text-blueDark shadow-sm hover:bg-white hover:text-blueDark peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-9 h-5 w-5 mt-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-white shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-100 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN BIG -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-blueDark px-4 py-3 text-xl font-semibold text-white shadow-sm hover:bg-blueDark hover:text-white peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-9 h-5 w-5 mt-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-blueDark shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-white bg-blueDark block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-white bg-blueDark block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-white bg-blueDark block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col text-left gap-6 bg-blueDark p-20">
+          <!-- DROPDOWN SMALL -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border-2 border-white border-opacity-20 bg-blueDark px-4 py-2 text-sm font-semibold text-white shadow-sm hover:text-blueDark hover:bg-gray-50 peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-blueDark shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN SMALL -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-blueDark shadow-sm hover:bg-white hover:text-blueDark peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-white shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN MEDIUM -->
+          <div class="mt-6">
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border-2 border-white border-opacity-20 bg-blueDark px-4 py-3 text-md font-semibold text-white shadow-sm hover:text-blueDark hover:bg-gray-50 peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-blueDark shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN MEDIUM -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-white px-4 py-3 text-md font-semibold text-blueDark shadow-sm peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-14 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-white shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN BIG -->
+          <div class="mt-6">
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border-2 border-opacity-20 border-gray-300 bg-blueDark px-4 py-3 text-xl font-semibold text-white shadow-sm hover:bg-white hover:text-blueDark peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-9 h-5 w-5 mt-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-blueDark shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-white block hover:bg-blue-600 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- DROPDOWN BIG -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex justify-center rounded-full border border-gray-300 bg-white px-4 py-3 text-xl font-semibold text-blueDark shadow-sm peer"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Dropdown
+              <!-- Heroicon name: mini/chevron-down -->
+              <svg
+                class="-mr-1 ml-9 h-5 w-5 mt-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="hidden mt-2 w-auto rounded-md bg-white shadow-lg peer-focus:block"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="list">
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >Account settings</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >Support</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block hover:bg-gray-200 px-4 py-2 text-sm"
+                  >License</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Fifth component -->
+    <section class="container mx-auto">
+      <div class="flex justify-center">
+        <div class="flex flex-col gap-6 px-10 py-12 bg-white">
+          <!-- First Badge -->
+          <span
+            class="rounded-xl border-2 border-gray-500 border-opacity-25 px-2 py-0.5 text-[#1E0E62] font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+          <!-- Second Badge -->
+          <span
+            class="rounded-xl border-2 border-blueDark border-opacity-25 px-2 py-0.5 text-white bg-[#1E0E62] font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+          <!-- Third Badge -->
+          <span
+            class="rounded-xl border-2 border-[#151439] border-opacity-0 px-2 py-0.5 text-white bg-[#151439] bg-opacity-40 font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+          <!-- Fourth Badge -->
+          <span
+            class="rounded-xl border-2 border-[#482BE7] px-2 py-0.5 text-white bg-[#482BE7] font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+          <!-- Fifth Badge -->
+          <span
+            class="rounded-xl border-2 border-[#25DAC5] px-2 py-0.5 text-white bg-[#25DAC5] font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+          <!-- Sixth Badge -->
+          <span
+            class="rounded-xl border-2 border-[#E93A7D] px-2 py-0.5 text-white bg-[#E93A7D] font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col gap-6 px-10 py-12 bg-blueDark">
+          <!-- First Badge -->
+          <span
+            class="rounded-xl border-2 border-white border-opacity-30 px-2 py-0.5 text-white bg-blueDark font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+          <!-- Second Badge -->
+          <span
+            class="rounded-xl border-2 border-blueDark border-opacity-25 px-2 py-0.5 text-[#1E0E62] bg-white font-DM font-semibold tracking-widest uppercase"
+            >60% sales
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Sixth component -->
+    <section class="container mx-auto">
+      <div class="flex justify-center gap-3 p-6">
+        <input
+          id="radio-changed"
+          type="radio"
+          value=""
+          class="w-4 h-4 rounded-full border-4 border-cyan-300 bg-[#1E0E62] hover:shadow-lg hover:shadow-[#5F6368] hover:border-cyan-300 checked:bg-[#1E0E62] checked:border-cyan-300 focus:outline-none transition duration-200 cursor-pointer"
+        />
+        <input
+          id="radio-changed"
+          type="radio"
+          value=""
+          class="w-4 h-4 rounded-full border-4 border-gray-300 bg-gray-300 hover:shadow-lg hover:shadow-[#5F6368] hover:border-cyan-300 checked:bg-[#1E0E62] checked:border-cyan-300 focus:outline-none transition duration-200 cursor-pointer"
+        />
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Seventh component -->
+    <section class="container mx-auto">
+      <div class="flex justify-center gap-3 p-6">
+        <input
+          class="h-5 w-5 bg-green text-green border-0 rounded-md cursor-pointer"
+          type="checkbox"
+          id="checkbox-verificate"
+        />
+        <input
+          class="h-5 w-5 bg-gray-300 text-green border-0 rounded-md cursor-pointer"
+          type="checkbox"
+        />
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Eighth component -->
+    <section class="container mx-auto">
+      <div class="flex justify-center gap-3 p-6">
+        <div class="flex p-2 gap-6 rounded">
+          <label
+            for="default-toggle-2"
+            class="inline-flex relative items-center w-full cursor-pointer"
+          >
+            <input
+              type="checkbox"
+              value=""
+              id="default-toggle-2"
+              class="sr-only peer"
+            />
+            <div
+              class="w-7 h-5 rounded-full peer bg-green peer-checked:after:-translate-x-2 peer-checked:after:border-gray-500 after:absolute after:top-[2px] after:right-[2px] after:border-white after:bg-white peer-checked:after:bg-gray-500 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-gray-300"
+            ></div>
+          </label>
+          <!-- ======= -->
+          <label
+            for="default-toggle-3"
+            class="inline-flex relative items-center w-full cursor-pointer"
+          >
+            <input
+              type="checkbox"
+              value=""
+              id="default-toggle-3"
+              class="sr-only peer"
+            />
+            <div
+              class="w-7 h-5 rounded-full peer bg-gray-300 peer-checked:after:translate-x-2 peer-checked:after:border-white after:absolute after:top-[2px] after:left-[2px] after:border-gray-500 after:bg-gray-500 peer-checked:after:bg-white after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-green"
+            ></div>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Nineth component -->
+    <section class="container mx-auto flex justify-center">
+      <div class="bg-white inline-block py-6 md:px-10">
+        <!-- ============== -->
+        <div class="flex justify-center p-6" role="group">
+          <button
+            type="button"
+            class="py-2 px-12 font-DM text-base hover:bg-gray-200 font-medium text-gray-600 rounded-l-full border-2 border-blueDark focus:z-10 focus:text-white focus:ring-0 focus:ring-white dark:bg-white dark:border-gray-300 dark:text-gray-400 dark:focus:bg-[#1E0E62]"
+          >
+            First
+          </button>
+          <button
+            type="button"
+            class="py-2 px-12 font-DM text-base hover:bg-gray-200 font-medium text-gray-600 border-t-2 border-b-2 border-blueDark focus:z-10 focus:text-white focus:ring-0 focus:ring-white dark:bg-white dark:border-gray-300 dark:text-gray-400 dark:focus:bg-[#1E0E62]"
+          >
+            Second
+          </button>
+          <button
+            type="button"
+            class="py-2 px-12 font-DM text-base hover:bg-gray-200 font-medium text-gray-600 rounded-r-full border-2 border-blueDark focus:z-10 focus:text-white focus:ring-0 focus:ring-white dark:bg-white dark:border-gray-300 dark:text-gray-400 dark:focus:bg-[#1E0E62]"
+          >
+            Third
+          </button>
+        </div>
+        <!-- ============= -->
+        <div class="flex justify-center p-4" role="group">
+          <button
+            type="button"
+            class="py-3.5 px-12 font-DM text-base hover:bg-gray-200 font-medium text-gray-600 rounded-l-full border-2 border-blueDark focus:z-10 focus:text-white focus:ring-0 focus:ring-white dark:bg-white dark:border-gray-300 dark:text-gray-400 dark:focus:bg-[#1E0E62]"
+          >
+            First
+          </button>
+          <button
+            type="button"
+            class="py-3.5 px-12 font-DM text-base hover:bg-gray-200 font-medium text-gray-600 border-t-2 border-b-2 border-blueDark focus:z-10 focus:text-white focus:ring-0 focus:ring-white dark:bg-white dark:border-gray-300 dark:text-gray-400 dark:focus:bg-[#1E0E62]"
+          >
+            Second
+          </button>
+          <button
+            type="button"
+            class="py-3.5 px-12 font-DM text-base hover:bg-gray-200 font-medium text-gray-600 rounded-r-full border-2 border-blueDark focus:z-10 focus:text-white focus:ring-0 focus:ring-white dark:bg-white dark:border-gray-300 dark:text-gray-400 dark:focus:bg-[#1E0E62]"
+          >
+            Third
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center">
+      <div class="bg-blueDark inline-block py-6 md:px-10">
+        <!-- ============== -->
+        <div class="flex justify-center p-6" role="group">
+          <button
+            type="button"
+            class="py-2 px-12 font-DM text-base hover:bg-blue-50 hover:bg-opacity-10 font-medium text-white rounded-l-full border-2 border-blueDark focus:z-10 focus:text-blueDark focus:ring-0 focus:ring-white dark:bg-blueDark dark:border-white dark:text-white dark:focus:bg-white"
+          >
+            First
+          </button>
+          <button
+            type="button"
+            class="py-2 px-12 font-DM text-base hover:bg-blue-50 hover:bg-opacity-10 font-medium text-white border-t-2 border-b-2 border-blueDark focus:z-10 focus:text-blueDark focus:ring-0 focus:ring-white dark:bg-blueDark dark:border-white dark:text-white dark:focus:bg-white"
+          >
+            Second
+          </button>
+          <button
+            type="button"
+            class="py-2 px-12 font-DM text-base hover:bg-blue-50 hover:bg-opacity-10 font-medium text-white rounded-r-full border-2 border-blueDark focus:z-10 focus:text-blueDark focus:ring-0 focus:ring-white dark:bg-blueDark dark:border-white dark:text-white dark:focus:bg-white"
+          >
+            Third
+          </button>
+        </div>
+        <!-- ============= -->
+        <div class="flex justify-center p-4" role="group">
+          <button
+            type="button"
+            class="py-3.5 px-12 font-DM text-base hover:bg-blue-50 hover:bg-opacity-10 font-medium text-white rounded-l-full border-2 border-blueDark focus:z-10 focus:text-blueDark focus:ring-0 focus:ring-white dark:bg-blueDark dark:border-white dark:text-white dark:focus:bg-white"
+          >
+            First
+          </button>
+          <button
+            type="button"
+            class="py-3.5 px-12 font-DM text-base hover:bg-blue-50 hover:bg-opacity-10 font-medium text-white border-t-2 border-b-2 border-blueDark focus:z-10 focus:text-blueDark focus:ring-0 focus:ring-white dark:bg-blueDark dark:border-white dark:text-white dark:focus:bg-white"
+          >
+            Second
+          </button>
+          <button
+            type="button"
+            class="py-3.5 px-12 font-DM text-base hover:bg-blue-50 hover:bg-opacity-10 font-medium text-white rounded-r-full border-2 border-blueDark focus:z-10 focus:text-blueDark focus:ring-0 focus:ring-white dark:bg-blueDark dark:border-white dark:text-white dark:focus:bg-white"
+          >
+            Third
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Tenth component -->
+    <section class="container mx-auto">
+      <div class="flex flex-col items-center md:flex-row md:justify-center">
+        <div class="bg-white flex gap-20 p-16">
+          <ul class="flex gap-3">
+            <li id="first-button">
+              <button
+                class="p-1.5 bg-gray-300 rounded-full focus:bg-green cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li id="first-button">
+              <button
+                class="p-1.5 bg-gray-300 rounded-full focus:bg-green cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li id="first-button">
+              <button
+                class="p-1.5 bg-gray-300 rounded-full focus:bg-green cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li id="first-button">
+              <button
+                class="p-1.5 bg-gray-300 rounded-full focus:bg-green cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li id="first-button">
+              <button
+                class="p-1.5 bg-gray-300 rounded-full focus:bg-green cursor-pointer transition duration-300"
+              ></button>
+            </li>
+          </ul>
+          <ul class="flex gap-3">
+            <li>
+              <button
+                class="p-1 bg-white border-2 border-gray-400 rounded-full focus:bg-[#1E0E62] focus:border-[#1E0E62] cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-white border-2 border-gray-400 rounded-full focus:bg-[#1E0E62] focus:border-[#1E0E62] cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-white border-2 border-gray-400 rounded-full focus:bg-[#1E0E62] focus:border-[#1E0E62] cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-white border-2 border-gray-400 rounded-full focus:bg-[#1E0E62] focus:border-[#1E0E62] cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-white border-2 border-gray-400 rounded-full focus:bg-[#1E0E62] focus:border-[#1E0E62] cursor-pointer transition duration-300"
+              ></button>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-blueDark p-16">
+          <ul class="flex gap-3">
+            <li>
+              <button
+                class="p-1 bg-transparent border-2 border-gray-400 border-opacity-60 rounded-full focus:bg-white focus:border-white cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-transparent border-2 border-gray-400 border-opacity-60 rounded-full focus:bg-white focus:border-white cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-transparent border-2 border-gray-400 border-opacity-60 rounded-full focus:bg-white focus:border-white cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-transparent border-2 border-gray-400 border-opacity-60 rounded-full focus:bg-white focus:border-white cursor-pointer transition duration-300"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="p-1 bg-transparent border-2 border-gray-400 border-opacity-60 rounded-full focus:bg-white focus:border-white cursor-pointer transition duration-300"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Eleventh component -->
+    <section class="container mx-auto">
+      <div class="flex flex-col items-center md:flex-row md:justify-center">
+        <!-- ============ -->
+        <div class="bg-white p-16">
+          <!-- ============ -->
+          <div class="flex flex-col gap-6">
+            <textarea
+              class="p-3.5 h-[90px] w-60 text-base font-DM placeholder:text-gray-400 bg-white rounded-xl border-2 border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+            <!-- ============ -->
+            <textarea
+              class="p-3.5 h-[90px] w-60 text-base text-white font-DM placeholder:text-gray-500 bg-[#1E0E62] rounded-xl border-2 border-[#1E0E62] focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <!-- ============== -->
+          <div class="flex flex-col gap-6 mt-16">
+            <textarea
+              class="p-3.5 h-[100px] w-[280px] text-lg font-medium font-DM placeholder:text-gray-400 bg-white rounded-xl border-2 border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+            <!-- ============ -->
+            <textarea
+              class="p-3.5 h-[100px] w-[280px] text-lg font-medium text-white font-DM placeholder:text-gray-500 bg-[#1E0E62] rounded-xl border-2 border-[#1E0E62] focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+        </div>
+        <!-- ============ -->
+        <div class="bg-blueDark p-16">
+          <!-- ============ -->
+          <div class="flex flex-col gap-6">
+            <textarea
+              class="p-3.5 h-[90px] w-60 text-base font-DM placeholder:text-white placeholder:text-opacity-40 bg-transparent rounded-xl border-2 border-gray-300 border-opacity-25 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+            <!-- ============ -->
+            <textarea
+              class="p-3.5 h-[90px] w-60 text-base font-DM placeholder:text-gray-500 placeholder:text-opacity-60 bg-white rounded-xl border-2 border-white focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <!-- ============== -->
+          <div class="flex flex-col gap-6 mt-16">
+            <textarea
+              class="p-3.5 h-[100px] w-[280px] text-lg text-white font-medium font-DM placeholder:text-gray-400 placeholder:text-opacity-60 bg-transparent rounded-xl border-2 border-white border-opacity-20 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+            <!-- ============ -->
+            <textarea
+              class="p-3.5 h-[100px] w-[280px] text-lg font-medium font-DM placeholder:text-gray-400 placeholder:text-opacity-80 bg-white rounded-xl border-2 border-white focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- Twelfth component -->
+    <section class="container mx-auto flex justify-center">
+      <div>
+        <!-- ======== -->
+        <div class="flex gap-8 bg-white md:p-10 md:pl-14 py-14">
+          <img src="./public/images/Mask.png" class="h-16" alt="profile" />
+          <div class="pr-auto md:pr-40">
+            <p class="w-[380px] font-DM text-lg text-gray-400 font-medium">
+              Extremely easy to use, helped us develop our Vote for George
+              Washington micro-site extre- mely quickly! We will definitely use
+              it again for other projects
+            </p>
+            <h1
+              class="mt-6 text-sm tracking-[.12rem] font-DM font-semibold text-[#1E0E62]"
+            >
+              JASMINE ANDREWS
+            </h1>
+            <span class="font-DM leading-8 text-gray-400">Microsoft</span>
+          </div>
+        </div>
+        <!-- =============== -->
+        <div class="bg-blueDark md:p-10 md:pl-14 py-14">
+          <div
+            class="w-[470px] flex gap-8 border-2 border-white border-opacity-20 rounded-xl p-10 py-8"
+          >
+            <img
+              src="./public/images/photo.png"
+              class="h-[70px]"
+              alt="profile"
+            />
+            <div>
+              <p class="w-[300px] font-DM text-white text-lg">
+                Get a fully retina ready site when you build with Startup
+                Framework. Websites look sharper and more gorgeous on devices
+                with retina display support.
+              </p>
+              <h1
+                class="mt-6 text-sm tracking-[.12rem] font-DM font-semibold text-white text-opacity-25"
+              >
+                TIMOTHY NATHAN
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
